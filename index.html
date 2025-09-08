@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web Page</h1>
+            <div class="theme-toggle">
+                <span class="toggle-text">Light Mode</span>
+                <button id="theme-switcher">Toggle Dark Mode</button>
+            </div>
+        </header>
+        
+        <main>
+            <section id="counter-section">
+                <h2>Counter Game</h2>
+                <div class="counter-container">
+                    <div class="counter-value" id="counter">0</div>
+                    <div class="counter-buttons">
+                        <button id="decrement">-</button>
+                        <button id="reset">Reset</button>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="faq-section">
+                <h2>FAQ Section</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is JavaScript used for?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>JavaScript is a versatile programming language primarily used for enhancing web pages to provide a more interactive experience. It allows you to create dynamically updating content, control multimedia, animate images, and much more.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What are JavaScript events?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>JavaScript events are actions or occurrences that happen in the browser, such as user interactions (clicks, keypresses) or browser events (page loading, resizing). You can use event handlers to execute code in response to these events.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is form validation?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Form validation is the process of ensuring that user input is correct and complete before submitting it to a server. JavaScript can validate form input in real-time, providing immediate feedback to users about any errors in their input.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="form-section">
+                <h2>Form Validation</h2>
+                <form id="validation-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name">
+                        <div class="error" id="name-error">Please enter a valid name (at least 3 characters)</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <div class="error" id="email-error">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password">
+                        <div class="error" id="password-error">Password must be at least 8 characters with one uppercase letter and one number</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password">
+                        <div class="error" id="confirm-password-error">Passwords do not match</div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Form</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Interactive Web Page Assignment &copy; 2023</p>
+        </footer>
+    </div>
+    
+    <div class="toast" id="toast"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
